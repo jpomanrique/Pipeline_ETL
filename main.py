@@ -96,3 +96,4 @@ def bulk_users(users: List[User]):
 
     return {
         "inserted": len(result.upserted_ids),
+    }
