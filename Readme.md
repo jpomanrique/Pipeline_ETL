@@ -10,9 +10,9 @@ Este repositório implementa um **pipeline ETL (Extract, Transform, Load)** em P
 
 Demonstrar um **ETL real e funcional**, integrando:
 
-- Consumo de API REST
-- Processamento e enriquecimento de dados
-- Escrita de volta via endpoints REST (`PUT /users/:id`)
+* Consumo de API REST
+* Processamento e enriquecimento de dados
+* Escrita de volta via endpoints REST (`PUT /users/:id`)
 
 O pipeline foi pensado para ser **simples, reproduzível e extensível**, seguindo boas práticas de engenharia de dados.
 
@@ -47,9 +47,9 @@ O retorno é carregado em memória como lista de dicionários Python.
 
 Nesta etapa, os dados são transformados. Exemplo:
 
-- Geração de mensagens personalizadas
-- Inserção de conteúdo informativo (ex: investimentos)
-- Preparação de estrutura compatível com a API
+* Geração de mensagens personalizadas
+* Inserção de conteúdo informativo (ex: investimentos)
+* Preparação de estrutura compatível com a API
 
 ```python
 user["news"].append({
@@ -59,9 +59,10 @@ user["news"].append({
 ```
 
 Esta etapa pode ser facilmente estendida para:
-- uso de LLMs
-- regras de negócio
-- scoring ou segmentação
+
+* uso de LLMs
+* regras de negócio
+* scoring ou segmentação
 
 ---
 
@@ -101,9 +102,9 @@ Pipeline_ETL/
 
 ## ⚙️ Tecnologias Utilizadas
 
-- **Python 3.9+**
-- **requests**
-- API REST (Users API)
+* **Python 3.9+**
+* **requests**
+* API REST (Users API)
 
 ---
 
@@ -135,11 +136,11 @@ User Pip updated? True!
 
 ## 🔮 Possíveis Evoluções
 
-- Agendamento (cron / Airflow)
-- Versionamento do pipeline
-- Logs estruturados
-- Retry e controle de falhas
-- Integração com LLMs
+* Agendamento (cron / Airflow)
+* Versionamento do pipeline
+* Logs estruturados
+* Retry e controle de falhas
+* Integração com LLMs
 
 ---
 
